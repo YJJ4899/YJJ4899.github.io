@@ -42,8 +42,4 @@ exclude:
   - Gemfile.lock
 sass:
   style: compressed
-<<<<<<< HEAD
 future: true
-=======
-future: true
->>>>>>> 41e5e0135f813f6c45e25ffe2b411b80c6883524
