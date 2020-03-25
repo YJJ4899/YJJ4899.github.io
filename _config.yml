@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: YJJ BLOG
-description: ""
+description: "아무말 대잔치"
 baseurl: "/"
 url: "https://yjj4899.github.io/"
 permalink: /:year/:month/:day/:title
