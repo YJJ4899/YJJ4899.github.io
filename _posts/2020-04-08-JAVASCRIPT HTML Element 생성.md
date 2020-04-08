@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "JAVASCRIPT HTML Element 생성"
-date:   2020-04-08
+date:   2020-04-08 10:48:06
 categories: 코드
 tags: html js
 comments: 1
