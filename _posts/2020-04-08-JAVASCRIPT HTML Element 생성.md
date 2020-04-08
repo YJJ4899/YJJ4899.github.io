@@ -12,7 +12,10 @@ JAVASCRIPT HTML Element 생성
 {% highlight html %}
 <div id="box"></div>
 {% endhighlight %}
-여기서 id가 box 인 div 안에 id가 menu인 div요소를 만들고 또 그안에 p태그를 만들고 그안에 rice라는 html을 삽입 하겠다.
+<div id=box> 하위요소로<br>
+<div id=menu> 요소를 만들고<br>
+id=menu의 하위요소에 p태그를 만들고 그안에 rice라는 html을 삽입 하겠다.<br>
+
 JavaScript :
 {% highlight javascript %}
 window.onload = function(){
