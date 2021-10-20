@@ -1,0 +1,59 @@
+---
+layout: post
+title:  "ubuntu 에서 그누보드 기본세팅"
+date:   2021-04-08 11:10:13 +0800
+categories: 서버
+tags: Ubuntu 20.04.2 LTS , 그누보드
+comments: 1
+---
+node.js fs 활용한 전체 폴더 배열
+
+apache, php, mysql을 설치한다
+
+```console
+sudo apt-get update
+sudo apt-get install apache2
+sudo apt-get install mysql-client
+sudo apt-get install php
+```
+
+기본적으로 필요한 php extension 설치해준다
+
+```console
+sudo apt-get install php7.4-mysqlnd
+sudo apt install php-gd
+```
+extension항목 수정
+
+```console
+vim /etc/php/7.4/apache2/php.ini 
+
+```
+vim에서 / 검색을 활용하여 필요한 항목들을 수정
+
+/gd  (n키로 다음항목으로 넘어갈수있음)
+
+```console
+;extension=gd2 
+;extension=mysqli
+```
+
+주석처리 되어있는 부분을 ;삭제하여 변경
+
+```console
+extension=gd2 
+extension=mysqli
+```
+
+
+
+개인적으로 short_tag 사용을 위하여 OFF로 되어있는 항목을 ON으로변경
+
+```console
+short_open_tag = OFF
+```
+
+```console
+short_open_tag = ON
+```
+
